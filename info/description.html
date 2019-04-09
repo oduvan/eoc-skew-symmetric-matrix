@@ -1,0 +1,70 @@
+<p>
+    In mathematics, particularly in linear algebra,
+    a skew-symmetric matrix (also known as an antisymmetric or antimetric) is a square matrix <strong>A</strong> which is transposed
+    and negative.
+    This means that it satisfies the equation
+    <span style="white-space: nowrap">A = &minus;A<sup>T</sup>.</span>
+    If the entry in the i-th row and j-th&nbsp;column is a<sub>ij</sub>, i.e.
+    <span style="white-space: nowrap">A = (a<sub>ij</sub>)</span>
+    then the symmetric condition becomes
+    <span style="white-space: nowrap">a<sub>ij</sub> = &minus;a<sub>ji</sub>.</span>
+</p>
+<p>
+    You should determine whether the specified square matrix is skew-symmetric
+    or not.
+</p>
+<p>
+    You can find more details on Skew-symmetric matrices on its <a
+        href="http://en.wikipedia.org/wiki/Skew-symmetric_matrix"
+        target="_blank">Wikipedia page.</a>
+</p>
+
+<p><strong>Input: </strong> A square matrix as a list of lists with integers.</p>
+<p><strong>Output: </strong> If the matrix is skew-symmetric or not as a boolean.
+</p>
+
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">symmetric([
+    [ 0,  1,  2],
+    [-1,  0,  1],
+    [-2, -1,  0]]) == true
+checkio([
+    [ 0,  1, 2],
+    [-1,  1, 1],
+    [-2, -1, 0]]) == false
+checkio([
+    [ 0,  1, 2],
+    [-1,  0, 1],
+    [-3, -1, 0]]) == false
+</pre>
+{% else %}
+<pre class="brush: python">checkio([
+    [ 0,  1,  2],
+    [-1,  0,  1],
+    [-2, -1,  0]]) == True
+checkio([
+    [ 0,  1, 2],
+    [-1,  1, 1],
+    [-2, -1, 0]]) == False
+checkio([
+    [ 0,  1, 2],
+    [-1,  0, 1],
+    [-3, -1, 0]]) == False
+</pre>
+{% endif %}
+</div>
+
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    Skew-symmetric matrices can be useful for the cross product, mathematical operations which are used for the calculation of force movements.
+    Matrixes are the basis of linear algebra and vector graphics.
+</p>
+
+<p>
+    <strong>Precondition:</strong> 0 < N < 5<br>
+</p>
