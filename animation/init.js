@@ -8,7 +8,7 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             functions: {
                 js: 'symmetric',
-                python: 'checkio'
+                python: 'symmetric'
             }
         });
         io.start();

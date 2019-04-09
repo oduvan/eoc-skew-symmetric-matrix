@@ -10,9 +10,9 @@ class Referee(RefereeRank):
     TESTS = TESTS
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
-    DEFAULT_FUNCTION_NAME = "checkio"
+    DEFAULT_FUNCTION_NAME = "symmetric"
     FUNCTION_NAMES = {
-        "python_3": "checkio",
+        "python_3": "symmetric",
         "js_node": "symmetric"
     }
     ENV_COVERCODE = {
